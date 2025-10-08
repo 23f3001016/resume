@@ -1,0 +1,154 @@
+:root {
+  --accent: #0b74de;
+  --muted: #6b7280;
+  --bg: #fbfdff;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Segoe UI, Roboto, Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: linear-gradient(180deg, var(--bg), #f4f7fb);
+  color: #0f1724;
+}
+
+.container {
+  max-width: 900px;
+  margin: 36px auto;
+  padding: 28px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(16, 24, 40, 0.06);
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 28px;
+}
+
+header.head {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.contact {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+a.contact-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Left column */
+.main {
+  padding-right: 6px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  color: #0b1220;
+}
+
+.section {
+  margin-bottom: 18px;
+}
+
+.edu-item,
+.exp-item,
+.proj-item {
+  margin-bottom: 12px;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.role {
+  font-weight: 600;
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+ul.skills {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+ul.skills li {
+  background: #f1f5f9;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+/* Right column */
+.aside {
+  background: linear-gradient(180deg, #ffffff, #fbfdff);
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.side-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stat {
+  margin-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    order: 2;
+  }
+}
+
+/* Small tweaks */
+.list {
+  margin: 6px 0 0 0;
+  padding-left: 18px;
+}
+
+.project-tech {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.bullet {
+  margin-left: 6px;
+}
